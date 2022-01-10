@@ -16,9 +16,9 @@ public class BasicActionsIntegration {
         bot.get(URL);
     }
 
-//    protected static void logStep(String step) {
-//        Logger.step(step);
-//    }
+    protected static void stepLog(String step) {
+        Logger.step(step);
+    }
 
     @AfterClass
     public void close() {

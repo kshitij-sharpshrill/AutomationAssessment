@@ -36,8 +36,9 @@ public class BasicActions {
 
     protected String pageTitle() {return bot.getTitle(); }
 
+    //Method to check if a Web element exists or not
     protected boolean checkElement(By element) {
-        if(element!= null){
+        if(bot.findElement(element)!=null){
             return true;
         }
         else{
@@ -45,8 +46,25 @@ public class BasicActions {
         }
     }
 
-    protected void quitBrowser(){
-        bot.quit();
+    protected void clickPopupElement(By element) {
+        waiter.until(ExpectedConditions.visibilityOfElementLocated(element));
+        waiter.until(ExpectedConditions.elementToBeClickable(element));
+        bot.findElement(element).click();
+    }
+
+    protected String textRetriever(By element){
+        return bot.findElement(element).getText();
+    }
+
+    protected boolean dataMatcher(String data, By element){
+        String text= textRetriever(element);
+
+        if(text.equals(data)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static void sleep(double sec) {
