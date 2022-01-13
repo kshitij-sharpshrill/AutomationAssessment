@@ -7,7 +7,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import org.testng.annotations.Test;
 
-    @Test
+
     @Epic("EPIC 1")
     public class ErrorMessageTest extends BasicActionsIntegration {
 

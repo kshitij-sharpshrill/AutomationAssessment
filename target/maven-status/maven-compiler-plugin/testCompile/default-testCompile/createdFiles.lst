@@ -1,0 +1,5 @@
+core/Logger.class
+pagetests/contact/SuccessMessageTest.class
+pagetests/addtocart/AddToCartTest.class
+pagetests/contact/ErrorMessageTest.class
+core/BasicActionsIntegration.class
