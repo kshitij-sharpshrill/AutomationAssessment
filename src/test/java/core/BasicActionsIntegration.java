@@ -1,6 +1,6 @@
 package core;
 
-import automationpractice.Bot;
+import automationpractice.utils.Bot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,7 +21,7 @@ public class BasicActionsIntegration {
     }
 
     @AfterClass
-    public void close() {
+    public void closeBrowser() {
         bot.quit();
     }
 }
