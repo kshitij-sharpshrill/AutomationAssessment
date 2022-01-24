@@ -1,6 +1,6 @@
 package automationpractice.page_functions;
 
-import automationpractice.page_ors.ShopandCart.ShopCartPage;
+import automationpractice.page_ors.shopandCart.ProductPage;
 import automationpractice.utils.BasicActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
@@ -15,25 +15,25 @@ public class ProductPageImpl extends BasicActions {
     public void addToCart(){
         sleep(3);
         //Saving the product name for verifying with the cart
-        ShopCartPage.ProdTextName= textRetriever(ShopCartPage.ProductName);
+        ProductPage.ProdTextName= textRetriever(ProductPage.ProductName);
 
         //Saving the product price for verifying with the cart
-        ShopCartPage.PriceTextName= textRetriever(ShopCartPage.ProductPrice);
+        ProductPage.PriceTextName= textRetriever(ProductPage.ProductPrice);
 
         //Adding the product to cart
-        click(ShopCartPage.AddToCart);
+        click(ProductPage.AddToCart);
     }
 
     @Step("Closing the popup")
     public void closePopup(){
         sleep(2);
-        clickPopupElement(ShopCartPage.PopupCross);
+        clickPopupElement(ProductPage.PopupCross);
     }
 
     @Step("Opening the Cart")
     public CartPageImpl openCart(){
         sleep(2);
-        click(ShopCartPage.Cart_btn);
+        click(ProductPage.Cart_btn);
 
         return new CartPageImpl(bot);
     }

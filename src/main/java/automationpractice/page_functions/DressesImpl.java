@@ -1,6 +1,6 @@
 package automationpractice.page_functions;
 
-import automationpractice.page_ors.ShopandCart.ShopCartPage;
+import automationpractice.page_ors.shopandCart.DressPage;
 import automationpractice.utils.BasicActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ public class DressesImpl extends BasicActions {
 
     @Step("Clicking on Casual Dresses")
     public CasualDressesImpl clickCasualDresses(){
-        click(ShopCartPage.CasualDresses);
+        click(DressPage.CasualDresses);
         return new CasualDressesImpl(bot);
     }
 }

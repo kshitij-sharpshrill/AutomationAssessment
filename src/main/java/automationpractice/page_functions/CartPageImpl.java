@@ -1,10 +1,11 @@
 package automationpractice.page_functions;
 
-import automationpractice.page_ors.ShopandCart.ShopCartPage;
+import automationpractice.page_ors.shopandCart.CartPage;
+import automationpractice.page_ors.shopandCart.ProductPage;
 import automationpractice.utils.BasicActions;
 import io.qameta.allure.Step;
-import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.WebDriver;
+import org.testng.asserts.SoftAssert;
 
 public class CartPageImpl extends BasicActions {
 
@@ -16,11 +17,11 @@ public class CartPageImpl extends BasicActions {
 
     @Step("Verifying the Product Name")
     public void nameCheck(){
-        softAssert.assertTrue(dataMatcher(ShopCartPage.ProdTextName, ShopCartPage.CartProductName),"Correct product is added to the cart");
+        softAssert.assertTrue(dataMatcher(ProductPage.ProdTextName, CartPage.CartProductName),"Correct product is added to the cart");
     }
 
     @Step("Verifying the Product Price")
     public void priceCheck(){
-        softAssert.assertTrue(dataMatcher(ShopCartPage.PriceTextName, ShopCartPage.CartProductPrice), "Price of the product added to the cart is correct");
+        softAssert.assertTrue(dataMatcher(ProductPage.PriceTextName, CartPage.CartProductPrice), "Price of the product added to the cart is correct");
        }
 }

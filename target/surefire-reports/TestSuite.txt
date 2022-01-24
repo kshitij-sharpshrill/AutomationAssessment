@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 54.93 s <<< FAILURE! - in TestSuite
+pagetests.contact.SuccessMessageTest.test1_to_open_the_correct_site_and_get_success_message  Time elapsed: 10.468 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[automationpractice.com]> but was:<[My Store]>
+	at pagetests.contact.SuccessMessageTest.test1_to_open_the_correct_site_and_get_success_message(SuccessMessageTest.java:30)
+
+pagetests.contact.SuccessMessageTest.test2_to_open_the_correct_site_and_get_error_message  Time elapsed: 13.313 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[automationpractice.com]> but was:<[My Store]>
+	at pagetests.contact.SuccessMessageTest.test2_to_open_the_correct_site_and_get_error_message(SuccessMessageTest.java:58)
+
+pagetests.contact.ErrorMessageTest.test_to_open_the_correct_site_and_get_error_message  Time elapsed: 10.389 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ndi-mb-246', ip: 'fe80:0:0:0:18bd:d6d4:5eca:3e3d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/h4/w27dk65s4lz...}, goog:chromeOptions: {debuggerAddress: localhost:51699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28d38af62c1ddfef7fc35508d920666d
+	at pagetests.contact.ErrorMessageTest.test_to_open_the_correct_site_and_get_error_message(ErrorMessageTest.java:29)
+
+pagetests.addtocart.AddToCartTest.add_to_cart_and_verify_name_and_price  Time elapsed: 10.394 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ndi-mb-246', ip: 'fe80:0:0:0:18bd:d6d4:5eca:3e3d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/h4/w27dk65s4lz...}, goog:chromeOptions: {debuggerAddress: localhost:51731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b8b8511c936925fdd3d4702543e0627
+	at pagetests.addtocart.AddToCartTest.add_to_cart_and_verify_name_and_price(AddToCartTest.java:31)
+

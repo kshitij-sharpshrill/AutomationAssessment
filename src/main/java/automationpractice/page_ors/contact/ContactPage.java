@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 
 public class ContactPage {
 
-    public static final By ContactUs_button = By.id("contact-link");
     public static final By SelectService = By.xpath("//select[@id='id_contact']/option[@value='2']");
     public static final By EmailId_text = By.id("email");
     public static final By Message_area = By.id("message");
